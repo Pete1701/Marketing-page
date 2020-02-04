@@ -1,0 +1,41 @@
+// Navigation Styles here
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px dashed @navigation-border;
+    background-color: coral;   
+
+    a{
+        font-size: 1.3rem;
+        margin: 0 20px;
+        text-decoration: none;
+
+        @media @tablet{        
+            margin: 0 10px;
+          }
+    }
+
+    @media @mobile{        
+        flex-direction: column;       
+    }
+}
+
+
+.top-content {
+
+    h2{
+        margin: 3% 0 1% 0;
+        font-size: 3.5rem;        
+    }
+    
+    p{
+        border-bottom: 2px dashed @navigation-border;
+        font-size: 2rem;
+    }
+
+    text-align: center;
+    background-color: yellowgreen;
+    color: lightgoldenrodyellow;
+}
