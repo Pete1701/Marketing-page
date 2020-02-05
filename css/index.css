@@ -3,7 +3,7 @@
     background-color: #17A2B8;
   }
   to {
-    background-color: red;
+    background-color: coral;
   }
 }
 .btn {
@@ -11,13 +11,13 @@
   background-color: #17A2B8;
   margin: 0 0 10px;
   cursor: pointer;
-  width: 170px;
+  width: 100%;
   height: 45px;
-  font-size: 2rem;
+  font-size: 2.8rem;
   border-radius: 10px;
   color: white;
   animation-name: example;
-  animation-duration: 0.5s;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
 }
 @media (max-width: 500px) {
@@ -27,8 +27,8 @@
 }
 @media (max-width: 1000px) {
   .btn {
-    width: 90%;
-    font-size: 1.7rem;
+    width: 100%;
+    font-size: 2.2rem;
   }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -249,17 +249,7 @@ img {
   border-bottom: 2px dashed #C0C0C0;
   font-size: 2rem;
 }
-.footer {
-  width: 100%;
-  border-top: 2px dashed silver;
-  background: #FFEBCD;
-}
-.footer p {
-  text-align: center;
-  color: #212529;
-  font-size: 1.6rem;
-  padding: 20px;
-}
+/*@import "footer";*/
 .home .content-section {
   margin: 30px 0;
   display: flex;
@@ -294,5 +284,30 @@ img {
   .home .content-section {
     flex-direction: column;
     align-items: center;
+  }
+}
+.home .image {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: beige;
+}
+.home .image img {
+  max-width: 40%;
+  margin: 10px;
+  border-radius: 20px;
+}
+.home .image h2 {
+  text-align: end;
+  color: darkgreen;
+}
+@media (max-width: 500px) {
+  .home .image {
+    width: 100%;
+    flex-direction: column;
+  }
+  .home .image h2 {
+    font-size: 2rem;
   }
 }

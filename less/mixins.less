@@ -6,25 +6,24 @@
     cursor: pointer;
     width: @width;
     height: 45px;
-    font-size: 2rem;
+    font-size: 2.8rem;
     border-radius: 10px;
     color: @color;
-    .animation(0.5s, infinite);
+    .animation(3s, infinite);
       
 
     @media @mobile{        
-        width: 100%;
-        
-      }
+        width: 100%;        
+    }
 
     @media @tablet{        
-    width: 90%;
-    font-size: 1.7rem;
+        width: 100%;
+        font-size: 2.2rem;
     }
 }
 
 .btn{
-    .custom-btn(@button-bg, 170px, white);
+    .custom-btn(@button-bg, 100%, white);
 }
 
 .animation(@duration, @count){

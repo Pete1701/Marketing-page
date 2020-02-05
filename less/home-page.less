@@ -40,4 +40,32 @@
       align-items: center;       
     }
   }
+
+  .image{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: beige;
+
+    img{
+      max-width: 40%;
+      margin: 10px;
+      border-radius: 20px;
+    }
+
+    h2{
+      text-align: end;      
+      color: darkgreen;
+    }
+
+    @media @mobile{        
+      width: 100%;
+      flex-direction: column;  
+      
+      h2{
+        font-size: 2rem;
+      }
+    }
+  }
 }
